@@ -2,6 +2,16 @@
 using MvcNetCoreEFMultiplesBBDD.Data;
 using MvcNetCoreEFMultiplesBBDD.Models;
 
+#region
+//CREATE VIEW V_EMPLEADOS
+//AS
+//SELECT EMP_NO AS IDEMPLEADO, EMP.APELLIDO, EMP.OFICIO, EMP.SALARIO,
+//DEPT.DNOMBRE AS DEPARTAMENTO, DEPT.LOC AS LOCALIDAD
+//FROM EMP INNER JOIN DEPT
+//ON EMP.DEPT_NO = DEPT.DEPT_NO
+//GO
+#endregion
+
 namespace MvcNetCoreEFMultiplesBBDD.Repositories
 {
     public class RepositoryEmpleados
