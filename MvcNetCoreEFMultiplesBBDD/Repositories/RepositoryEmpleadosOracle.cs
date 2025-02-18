@@ -3,6 +3,24 @@ using MvcNetCoreEFMultiplesBBDD.Data;
 using MvcNetCoreEFMultiplesBBDD.Models;
 using Oracle.ManagedDataAccess.Client;
 
+#region
+//ORACLE
+//CREATE OR REPLACE VIEW V_EMPLEADOS
+//AS
+//SELECT EMP.EMP_NO AS IDEMPLEADO, EMP.APELLIDO, EMP.OFICIO, EMP.SALARIO,
+//DEPT.DNOMBRE AS DEPARTAMENTO, DEPT.LOC AS LOCALIDAD
+//FROM EMP INNER JOIN DEPT
+//ON EMP.DEPT_NO=DEPT.DEPT_NO;
+
+//ORACLE
+//CREATE OR REPLACE PROCEDURE SP_ALL_VEMPLEADOS
+//(p_cursor_empleados out sys_refcursor)
+//AS
+//BEGIN
+//  OPEN p_cursor_empleados for
+//  SELECT * FROM V_EMPLEADOS;
+//END;
+#endregion
 namespace MvcNetCoreEFMultiplesBBDD.Repositories
 {
     public class RepositoryEmpleadosOracle : IRepositoryEmpleados
